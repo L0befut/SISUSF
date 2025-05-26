@@ -1,0 +1,14 @@
+<!-- templates/pacientes/listar.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Pacientes Cadastrados</h2>
+
+<a href="{{ url_for('novo_paciente') }}" class="novo-paciente">Novo Paciente</a>
+
+<ul>
+  {% for paciente in pacientes %}
+    <li>{{ paciente.nome }} — CPF: {{ paciente.cpf }}</li>
+  {% endfor %}
+</ul>
+{% endblock %}

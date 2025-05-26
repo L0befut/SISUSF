@@ -1,0 +1,4 @@
+# Bibliotecas necessárias
+
+flask
+flask_sqlalchemy
